@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "ui-sans-serif", "system-ui", "sans-serif";
+  --font-display: "Inter", "sans-serif";
+
+  /* App Specific Colors */
+  --color-hospital-blue-light: #f0f9ff;
+  --color-hospital-blue: #7dd3fc;
+  --color-hospital-blue-deep: #0ea5e9;
+  --color-midnight: #0f172a;
+  --color-midnight-light: #1e293b;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-midnight font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.organic-shadow {
+  box-shadow: 0 10px 40px -10px rgba(15, 23, 42, 0.05);
+}
